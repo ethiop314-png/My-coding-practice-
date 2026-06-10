@@ -1,6 +1,7 @@
 /* password attempts
 Stream Library*/
 #include<iostream>
+#include<string>
 using namespace std;
 int main() {
 string name;
@@ -18,13 +19,15 @@ if(user_input==secret_pass){
   break;
   }
 else{
-   attempts-=1;
+   attempts--;
    cout<<name <<" .you enter incorrect password.please try agian\n"<<endl;
 }
 {if (attempts==0)
      cout<<name <<" .your password locked for 24 hours\n"<<endl;
-}}
-    return 0;
+}
+}
+
 return 0;
-}/* Yihun 
+}
+/* Yihun 
      shambel */
