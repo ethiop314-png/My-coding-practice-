@@ -1,0 +1,27 @@
+#include<iostream>
+using namespace std;
+
+int main() {
+    int size;
+    cout << "Enter the size of array: ";
+    cin >> size;
+
+    int array[size]; 
+
+    cout << "Enter element 1: ";
+    cin >> array[0];
+
+    int max = array[0]; 
+
+    for(int i = 1; i < size; i++) {
+        cout << "Enter element " << i + 1 << ": ";
+        cin >> array[i];
+
+        if(array[i] > max)
+            max = array[i];
+    }
+
+    cout << "Maximum value from the given set is: " << max << endl;
+
+    return 0;
+}
